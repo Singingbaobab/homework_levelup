@@ -8,12 +8,12 @@
 
 /*HEADER*/
 
-.header_container{
+.main{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.menu_header_ul{
+.header__menu-ul{
     height: 90px;
     display: flex;
     justify-content: flex-end;
@@ -21,30 +21,33 @@
     font-style: normal;
     align-items: center;
 }
-.menu_header_li{
+.header__menu-li{
     padding-left: 15px;
 
 }
-.menu_header_li:first-child{
+.header__menu-li:first-child{
     padding: 0;
 }
 
-.menu_header_link:hover{
+.header__menu-link:hover{
     color: #FF6464
 }
  
 /*BASE*/
 
-.main{
+.container{
     max-width: 856px;
     margin: 0 auto;
 }
-
+.posts{
+        background:#EDF7FA;
+    
+}
 /*HELLO*/
 
 .hello{
     display: flex;
-    padding-top: 140px;
+    padding: 140px 0 70px 0;
 }
 .hello_text_h1{
     font-family: 'Heebo', sans-serif;
@@ -79,3 +82,177 @@
     font-size: 20px;
     line-height: 29px;
     }
+    
+    /*Section posts*/
+
+    .posts__wraper{
+        padding: 25px 0 25px 0;
+    }
+
+    .posts__header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .posts__recent-paragraph{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 60px
+    }
+
+    .posts__recent-view{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    .posts__recent-link{
+        align-self: center;
+    }
+    .post__content{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 45px;
+
+    }
+    .post__one, .post__two{
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+    }
+
+    .post__one{
+        padding-right: 30px;
+    }
+
+    .post__inner{
+        padding: 30px;
+        background: #FFFFFF;
+    }
+
+    .post_inner-text{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 38px
+    }
+    .post__info{
+    display: flex;
+    padding: 20px 0 20px 0;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+
+    }
+
+    .post__info-sign{
+        padding: 0 30px 0 30px;
+
+    }
+
+    .post__description{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    /*Featured SECTION*/
+
+    .featured__content{
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+    }
+    
+    .featured__news{
+        padding-bottom: 30px;
+    }
+
+    .featured__header{
+        padding: 30px 0 50px 0;
+    }
+
+    .featured__header-text{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    .featured__content-right{
+        padding: 0 0 0 15px;
+    }    
+
+    .featured__info{
+        display: flex;
+        padding: 20px 0 20px 0;
+    }
+
+   .featured__content-text{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+   }
+    
+   .featured__info-date{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    align-self: center;
+    color: #fff;
+    background: #142850;
+    border-radius: 16px;
+    padding: 2px 8px;
+   }
+
+   .featured__info-text{
+   font-family: Heebo;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 29px;
+   padding-left: 27px;
+   color: #8695A4;
+}
+.featured__content-description{
+font-family: Heebo;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+}
+
+/*FOOTER*/
+
+.footer{
+padding: 100px 0 70px 0;
+display: flex;
+justify-content: center;
+}
+
+.footer__links > svg:not(:first-child){
+    padding-left: 33px;
+}
+
+.fotter__content-text{
+    padding-top: 20px;
+font-family: Heebo;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+color: #21243D;
+}
