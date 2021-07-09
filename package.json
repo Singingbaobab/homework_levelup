@@ -1,0 +1,19 @@
+{
+  "name": "homework_levelup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2dz.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Singingbaobab/homework_levelup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Singingbaobab/homework_levelup/issues"
+  },
+  "homepage": "https://github.com/Singingbaobab/homework_levelup#readme"
+}
