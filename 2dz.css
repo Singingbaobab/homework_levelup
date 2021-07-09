@@ -11,26 +11,27 @@
 .main{
     max-width: 1200px;
     margin: 0 auto;
+    font-family: Heebo;
+    font-style: normal;
 }
 
 .header__menu-ul{
     height: 90px;
     display: flex;
     justify-content: flex-end;
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
     align-items: center;
 }
+
 .header__menu-li{
     padding-left: 15px;
-
 }
+
 .header__menu-li:first-child{
     padding: 0;
 }
 
 .header__menu-link:hover{
-    color: #FF6464
+    color: #FF6464;
 }
  
 /*BASE*/
@@ -39,24 +40,27 @@
     max-width: 856px;
     margin: 0 auto;
 }
+
 .posts{
-        background:#EDF7FA;
-    
+    background:#EDF7FA;   
 }
+
 /*HELLO*/
 
 .hello{
     display: flex;
     padding: 140px 0 70px 0;
 }
-.hello_text_h1{
+
+.hello__text-h1{
     font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
     line-height: 60px;
 }
-.hello_text_p{
+
+.hello__text-p{
     font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -64,12 +68,14 @@
     line-height: 23px;
     padding: 20px 0 20px 0;
 }
-.hello_avatar_img{
+
+.hello__avatar-img{
     width: 243px;
     height: 243px;
     border-radius: 50%;
 }
-.hello_button{
+
+.hello__button{
     width: 208px;
     height: 47px;
     color: #fff;
@@ -113,12 +119,13 @@
     .posts__recent-link{
         align-self: center;
     }
+
     .post__content{
         display: flex;
         justify-content: space-between;
         padding-bottom: 45px;
-
     }
+
     .post__one, .post__two{
         box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
         border-radius: 4px;
@@ -140,20 +147,19 @@
         font-size: 26px;
         line-height: 38px
     }
-    .post__info{
-    display: flex;
-    padding: 20px 0 20px 0;
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
 
+    .post__info{
+        display: flex;
+        padding: 20px 0 20px 0;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .post__info-sign{
         padding: 0 30px 0 30px;
-
     }
 
     .post__description{
@@ -167,9 +173,9 @@
     /*Featured SECTION*/
 
     .featured__content{
-    display: flex;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #E0E0E0;
+        display: flex;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #E0E0E0;
     }
     
     .featured__news{
@@ -206,53 +212,111 @@
    }
     
    .featured__info-date{
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    align-self: center;
-    color: #fff;
-    background: #142850;
-    border-radius: 16px;
-    padding: 2px 8px;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        align-self: center;
+        color: #fff;
+        background: #142850;
+        border-radius: 16px;
+        padding: 2px 8px;
    }
 
    .featured__info-text{
-   font-family: Heebo;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 29px;
-   padding-left: 27px;
-   color: #8695A4;
-}
-.featured__content-description{
-font-family: Heebo;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 23px;
-}
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;
+        padding-left: 27px;
+        color: #8695A4;
+   }
 
-/*FOOTER*/
+   .featured__content-description{
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+   }
 
-.footer{
-padding: 100px 0 70px 0;
-display: flex;
-justify-content: center;
-}
+    /*FOOTER*/
 
-.footer__links > svg:not(:first-child){
-    padding-left: 33px;
-}
+   .footer{
+        padding: 100px 0 70px 0;
+        display: flex;
+        justify-content: center;
+   }
 
-.fotter__content-text{
-    padding-top: 20px;
-font-family: Heebo;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 21px;
-text-align: center;
-color: #21243D;
+    .footer__links > svg:not(:first-child){
+        padding-left: 33px;
+   }
+
+    .fotter__content-text{
+        padding-top: 20px;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #21243D;
+   }
+
+@media (max-width: 850px) {
+   .container{
+       padding: 0 15px 0 15px;
+   }
+   
+    .header{
+       display: none;
+       padding: 0 15px 0 15px;
+   }
+   
+    .hello{
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .hello__text{
+        padding-top: 20px;   
+   }
+
+    .hello__avatar{
+        padding-bottom: 20px;
+   }
+    .hello__text-h1,
+    .hello__text-p{
+        text-align: center;
+    }  
+
+    .hello__button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto    
+   }
+
+    .posts{
+        background: #fff;
+   }
+
+    .post__content{
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+
+    .featured__content{
+        flex-wrap: wrap;
+        justify-content: center;     
+   }
+
+    .featured__content-image{
+         width: 100%;
+   }
+
+    .featured__content{
+          width: 100%;
 }
